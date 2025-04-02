@@ -7,13 +7,13 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#57d891,#7daee6,#fff);
+    background: linear-gradient(#57d891,#5199eb,#fff);
     padding: 10px;
 }
 .to-do{
     width: 100%;
     max-width: 540px;
-    background: #337dc2;
+    background: #f8f8f8;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -57,6 +57,7 @@ ul li{
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    position: relative;
 }
 ul li::before{
     content: '';
@@ -64,26 +65,31 @@ ul li::before{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-image: url(images/unchecked.png);
+    background-image: url(https://th.bing.com/th?q=Unchecked+Circular+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 2px;
 }
 ul li.checked{
-    color: #555;
+    color: #0e0c0c;
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(images/checked.png);
+    background-image: url(https://ts3.mm.bing.net/th?id=OIP.tF7t_3_DScTa9Reme33v4QHaHa&pid=15.1);
 }
 ul li span{
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 8px;
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #555;
+    color: #ffffff;
     line-height: 40px;
     text-align: center;
+    border-radius: 50%;
 }
 ul li span:hover{
-    background: #c6d6e7;
+    background: #829fc0;
 }
